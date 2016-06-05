@@ -1887,7 +1887,7 @@
 			text-transform: none !important;
 		}
 
-		.select-wrapper:before {
+		.select-wrapper::after {
 			content: '\f078';
 			display: block;
 			height: 2.75em;
@@ -2155,6 +2155,14 @@
 		ol li {
 			padding-left: 0.25em;
 		}
+
+    a.orange{
+        color:#ff5206;
+}
+
+    ul.orange {
+        color:#ff5206;
+}
 
 	ul {
 		list-style: disc;
@@ -3858,11 +3866,23 @@
 				line-height: inherit;
 			}
 
+        .icor{
+            content: '';
+            display: block;
+            height: 40px;  /*height of icon */
+            width: 40px;  /*width of icon */
+            position: absolute;
+              /*where to replace the icon */
+            top: 0px;
+            left: -40px;
+              /*background */
+            background: #F8E6AE url(images/kx.png) no-repeat 0px 0px;
+        }
+
 			#header h1:before {
 				background: #ffffff;
 				border-radius: 100%;
 				color: #5f9dd2;
-				content: '\f1b3';
 				display: inline-block;
 				font-size: 0.9em;
 				height: 2em;
@@ -3904,16 +3924,17 @@
 							text-decoration: none;
 						}
 
-							#header nav ul li a.submenu:before {
+							#header nav ul li a.submenu:after {
 								-moz-osx-font-smoothing: grayscale;
 								-webkit-font-smoothing: antialiased;
 								font-family: FontAwesome;
 								font-style: normal;
 								font-weight: normal;
 								text-transform: none !important;
+                                margin-left: 6px
 							}
 
-							#header nav ul li a.submenu:before {
+							#header nav ul li a.submenu::after {
 								content: '\f107';
 								margin-right: 0.75em;
 							}
@@ -4074,11 +4095,10 @@
 /* Banner */
 
 	#banner {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("../../images/banner.png");
 		background-position: center center;
 		background-size: auto, cover, cover;
 		background-attachment: fixed, fixed, fixed;
@@ -4303,10 +4323,10 @@
 /* Footer */
 
 	#footer {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.png");
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: auto, cover, cover;
 		background-attachment: fixed, fixed, fixed;
@@ -4538,7 +4558,7 @@
 
 	#navPanel {
 		background-color: rgba(21, 27, 33, 0.6);
-		color: #ffffff;
+		color: #ff5206;
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
@@ -4563,32 +4583,32 @@
 	}
 
 		#navPanel input, #navPanel select, #navPanel textarea {
-			color: #ffffff;
+			color: #ff5206;
 		}
 
 		#navPanel a {
-			color: #ffffff;
+			color: #ff5206;
 		}
 
 		#navPanel strong, #navPanel b {
-			color: #ffffff;
+			color: #ff5206;
 		}
 
 		#navPanel h1, #navPanel h2, #navPanel h3, #navPanel h4, #navPanel h5, #navPanel h6 {
-			color: #ffffff;
+			color: #ff5206;
 		}
 
 		#navPanel blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #ff5206;
 		}
 
 		#navPanel code {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			border-color: #ff5206;
 		}
 
 		#navPanel hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #ff5206;
 		}
 
 		#navPanel nav {
