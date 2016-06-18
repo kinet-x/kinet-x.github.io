@@ -4323,21 +4323,46 @@
 /* Footer */
 
 	#footer {
-		color: gray;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+		background-position: center center;
+		background-size: auto, cover, cover;
+		background-attachment: fixed, fixed, fixed;
+		background-repeat: repeat, no-repeat, no-repeat;
+		background-color: rgba(21, 27, 33, 0.6);
+		color: #ffffff;
 	}
 
+		#footer input, #footer select, #footer textarea {
+			color: #ffffff;
+		}
+
 		#footer a {
-			color: orange;
+			color: #ffffff;
+		}
+
+		#footer strong, #footer b {
+			color: #ffffff;
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: darkslategray;
+			color: #ffffff;
 		}
 
 		#footer blockquote {
 			border-left-color: #ffffff;
 		}
 
+		#footer code {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: #ffffff;
+		}
+
+		#footer hr {
+			border-bottom-color: #ffffff;
+		}
 
 		#footer input[type="submit"],
 		#footer input[type="reset"],
@@ -4346,22 +4371,64 @@
 		#footer .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #ffffff;
-			color: whitesmoke!important;
+			color: #ffffff !important;
 			letter-spacing: 0.05em;
 			text-transform: uppercase;
 		}
 
+			#footer input[type="submit"]:hover,
+			#footer input[type="reset"]:hover,
+			#footer input[type="button"]:hover,
+			#footer button:hover,
+			#footer .button:hover {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			#footer input[type="submit"]:active,
+			#footer input[type="reset"]:active,
+			#footer input[type="button"]:active,
+			#footer button:active,
+			#footer .button:active {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			#footer input[type="submit"].icon:before,
+			#footer input[type="reset"].icon:before,
+			#footer input[type="button"].icon:before,
+			#footer button.icon:before,
+			#footer .button.icon:before {
+				color: #ffffff;
+			}
+
+			#footer input[type="submit"].special,
+			#footer input[type="reset"].special,
+			#footer input[type="button"].special,
+			#footer button.special,
+			#footer .button.special {
+				box-shadow: none;
+				background-color: #ffffff;
+				color: rgba(21, 27, 33, 0.6) !important;
+			}
+
+				#footer input[type="submit"].special.icon:before,
+				#footer input[type="reset"].special.icon:before,
+				#footer input[type="button"].special.icon:before,
+				#footer button.special.icon:before,
+				#footer .button.special.icon:before {
+					color: #ffffff;
+				}
+
 		#footer header p {
-			color: gray;
+			color: #ffffff;
 		}
 
 		#footer header.major:after {
-			background-color: whitesmoke;
+			background-color: #ffffff;
 		}
 
 		#footer .content {
-			padding: 2em 0 0 0 ;
-			background-color: white;
+			padding: 6.5em 0 4.5em 0 ;
+			background-color: rgba(21, 27, 33, 0.6);
 		}
 
 			#footer .content > .inner {
@@ -4370,7 +4437,7 @@
 				display: -ms-flex;
 				display: flex;
 				margin: 0 auto;
-				width: 95%;
+				width: 70em;
 			}
 
 				#footer .content > .inner > * {
@@ -4443,18 +4510,12 @@
 					}
 
 			}
-        #footer hr {
-            margin-top: -2%;
-            color: black;
-            height: 5%;
-}
 
 		#footer .copyright {
 			font-size: 0.8em;
-			margin-top: -4%;
-			padding: 2em 0;
+			margin: 0;
+			padding: 2em;
 			text-align: center;
-            color: orangered;
 		}
 
 			#footer .copyright br {
@@ -4468,7 +4529,7 @@
 			@media screen and (max-width: 1280px) {
 
 				#footer .copyright {
-					padding: 3em 0;
+					padding: 6em 0;
 				}
 
 			}
@@ -4476,7 +4537,7 @@
 			@media screen and (max-width: 736px) {
 
 				#footer .copyright {
-					padding: 2em 0;
+					padding: 4em 0;
 				}
 
 			}
