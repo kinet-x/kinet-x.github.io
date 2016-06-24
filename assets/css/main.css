@@ -2524,12 +2524,13 @@
 	}
 
 	header p {
-		position: relative;
+		position: fixed;
 		margin: 0 0 1.5em 0;
 	}
 
 	header h2 + p {
 		font-size: 1.25em;
+		margin-left: 200000em;
 		margin-top: -0.7em;
 		line-height: 1.5em;
 	}
@@ -2670,7 +2671,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6.5em 0 4.5em 0 ;
+		padding: 6.5em 0 6.5em 0 ;
 		position: relative;
 	}
 
@@ -3631,7 +3632,7 @@
 				}
 
 				.wrapper.cta > .inner > :first-child {
-					padding-left: 0;
+					padding-left: 100;
 					width: 50%;
 				}
 
@@ -3643,7 +3644,7 @@
 
 				.wrapper.cta > .inner > * {
 					width: 100% !important;
-					padding-left: 0 !important;
+					padding-left: 100 !important;
 				}
 
 			}
