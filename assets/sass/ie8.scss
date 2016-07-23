@@ -4,77 +4,80 @@
 @import 'libs/skel';
 
 /*
-	Archetype by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	$palette-border: #ddd;
+/* Type */
 
-/* List */
-
-	ul {
-		&.features {
-			li {
-				border-top-color: $palette-border;
-
-				h3 {
-					&:before {
-						border: solid (_size(border-width) * 2) $palette-border;
-					}
-				}
-			}
-		}
+	body {
+		color: _palette(fg-bold);
 	}
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		border: solid (_size(border-width) * 2) $palette-border;
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		border: solid 1px !important;
 
 		&.special {
-			border: none;
+			border: none !important;
 		}
 	}
 
-/* Section/Article */
+/* Icon */
 
-	header {
+	.icon {
 		&.major {
-			&:after {
-				background-color: $palette-border;
-			}
-		}
-	}
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 
-/* Wrapper */
-
-	.wrapper {
-		&.cta {
 			&:before {
-				background: url('images/ie/overlay.png') !important;
+				font-size: 4em;
+				border: 0;
 			}
 		}
 	}
 
-/* Banner */
+/* Spotlight */
 
-	#banner {
-		.content {
-			background: url('images/ie/overlay.png');
+	.spotlight {
+		.image {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			img {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
+		}
+	}
+
+/* Features */
+
+	.features {
+		li {
+			width: 29%;
 		}
 	}
 
 /* Footer */
 
 	#footer {
-		.content {
-			background: url('images/ie/overlay.png');
+		> * {
+			width: 50%;
+			margin-left: 0;
+		}
+	}
+
+/* Main */
+
+	#main {
+		> .main {
+			> .image.main:first-child {
+				margin-top: 0;
+				margin-left: 0;
+				width: 100%;
+			}
 		}
 	}

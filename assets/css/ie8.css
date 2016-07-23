@@ -1,59 +1,66 @@
 /*
-	Archetype by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* List */
+/* Type */
 
-	ul.features li {
-		border-top-color: #ddd;
+	body {
+		color: #ffffff;
 	}
-
-		ul.features li h3:before {
-			border: solid 2px #ddd;
-		}
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		border: solid 2px #ddd;
+		position: relative;
+		border: solid 1px !important;
+	}
+
+		.button.special {
+			border: none !important;
+		}
+
+/* Icon */
+
+	.icon.major {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.icon.major:before {
+			font-size: 4em;
+			border: 0;
+		}
+
+/* Spotlight */
+
+	.spotlight .image {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-		input[type="submit"].special,
-		input[type="reset"].special,
-		input[type="button"].special,
-		button.special,
-		.button.special {
-			border: none;
+		.spotlight .image img {
+			position: relative;
+			-ms-behavior: url("assets/js/ie/PIE.htc");
 		}
 
-/* Section/Article */
+/* Features */
 
-	header.major:after {
-		background-color: #ddd;
-	}
-
-/* Wrapper */
-
-	.wrapper.cta:before {
-		background: url("images/ie/overlay.png") !important;
-	}
-
-/* Banner */
-
-	#banner .content {
-		background: url("images/ie/overlay.png");
+	.features li {
+		width: 29%;
 	}
 
 /* Footer */
 
-	#footer .content {
-		background: url("images/ie/overlay.png");
+	#footer > * {
+		width: 50%;
+		margin-left: 0;
+	}
+
+/* Main */
+
+	#main > .main > .image.main:first-child {
+		margin-top: 0;
+		margin-left: 0;
+		width: 100%;
 	}

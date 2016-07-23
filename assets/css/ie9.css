@@ -1,142 +1,62 @@
 /*
-	Archetype by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* List */
+/* Spotlight */
 
-	ul.features li {
-		overflow: hidden;
+	.spotlight:after {
+		content: '';
+		display: block;
+		clear: both;
 	}
 
-		ul.features li h3 {
-			display: inline-block;
-			float: left;
-		}
-
-		ul.features li p {
-			display: inline-block;
-		}
-
-/* Posts */
-
-	.posts {
-		overflow: hidden;
+	.spotlight .content {
+		float: left;
+		width: 60%;
 	}
 
-		.posts .post {
-			overflow: hidden;
-		}
-
-			.posts .post .image {
-				display: inline-block;
-				float: left;
-				width: 35%;
-			}
-
-			.posts .post .content {
-				display: inline-block;
-				width: 55%;
-			}
-
-		.posts > * {
-			display: inline-block;
-			float: left;
-		}
-
-/* Wrapper */
-
-	.wrapper.cta {
-		position: relative;
-		background-image: url("../../images/cta.jpg");
-		background-position: center center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
+	.spotlight .image {
+		float: left;
 	}
 
-		.wrapper.cta > * {
-			position: relative;
-			z-index: 1;
-		}
+/* Features */
 
-		.wrapper.cta:before {
+	.features:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.features li {
+		float: left;
+	}
+
+/* Statistics */
+
+	.statistics {
+		display: inline-block;
+		width: auto;
+	}
+
+		.statistics:after {
 			content: '';
 			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			background: #2F373F;
-			opacity: 0.6;
+			clear: both;
 		}
 
-		.wrapper.cta > .inner {
-			overflow: hidden;
+		.statistics li {
+			float: left;
+			padding: 1.5em 2.5em;
 		}
-
-			.wrapper.cta > .inner > * {
-				float: left;
-				display: inline-block;
-			}
-
-	.wrapper.sidebar > .inner {
-		overflow: hidden;
-	}
-
-	.wrapper.sidebar.left > .inner > .content {
-		float: right;
-	}
-
-	.wrapper.sidebar.left > .inner > .sidebar {
-		float: right;
-	}
-
-	.wrapper.sidebar.right > .inner > .content {
-		float: left;
-	}
-
-	.wrapper.sidebar.right > .inner > .sidebar {
-		float: left;
-	}
-
-/* Banner */
-
-	#banner {
-		position: relative;
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-	}
-
-		#banner .content > .inner {
-			overflow: hidden;
-		}
-
-			#banner .content > .inner header {
-				float: left;
-			}
 
 /* Footer */
 
-	#footer {
-		position: relative;
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
+	#footer > * {
+		float: left;
 	}
 
-		#footer .content > .inner {
-			overflow: hidden;
-		}
-
-			#footer .content > .inner > * {
-				display: inline-block;
-				float: left;
-			}
+	#footer .copyright {
+		clear: both;
+	}

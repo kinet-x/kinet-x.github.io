@@ -1,11 +1,7 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
-/// Archetype by Pixelarity
-/// pixelarity.com @pixelarity
-/// License: pixelarity.com/license
+/// Stellar by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Table */
@@ -21,7 +17,7 @@
 
 		tbody {
 			tr {
-				border: solid _size(border-width);
+				border: solid 1px;
 				border-left: 0;
 				border-right: 0;
 			}
@@ -39,11 +35,11 @@
 		}
 
 		thead {
-			border-bottom: solid (_size(border-width) * 2);
+			border-bottom: solid 2px;
 		}
 
 		tfoot {
-			border-top: solid (_size(border-width) * 2);
+			border-top: solid 2px;
 		}
 
 		&.alt {
@@ -52,18 +48,18 @@
 			tbody {
 				tr {
 					td {
-						border: solid _size(border-width);
+						border: solid 1px;
 						border-left-width: 0;
 						border-top-width: 0;
 
 						&:first-child {
-							border-left-width: _size(border-width);
+							border-left-width: 1px;
 						}
 					}
 
 					&:first-child {
 						td {
-							border-top-width: _size(border-width);
+							border-top-width: 1px;
 						}
 					}
 				}

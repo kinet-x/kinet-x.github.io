@@ -1,11 +1,7 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
-/// Archetype by Pixelarity
-/// pixelarity.com @pixelarity
-/// License: pixelarity.com/license
+/// Stellar by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Button */
@@ -16,16 +12,19 @@
 	button,
 	.button {
 		@include vendor('appearance', 'none');
-		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
+		@include vendor('transition', (
+			'background-color #{_duration(transition)} ease-in-out',
+			'color #{_duration(transition)} ease-in-out'
+		));
 		border-radius: _size(border-radius);
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8em;
-		font-weight: _font(weight-bold);
-		height: 3.25em;
-		line-height: 3.35em;
-		padding: 0 2em;
+		font-weight: _font(weight);
+		height: 2.75em;
+		line-height: 2.75em;
+		min-width: 9.25em;
+		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
@@ -45,28 +44,11 @@
 		}
 
 		&.small {
-			font-size: 0.6em;
+			font-size: 0.8em;
 		}
 
 		&.big {
-			font-size: 0.9em;
-			height: 3.5em;
-			line-height: 3.6em;
-			padding: 0 2em;
-		}
-
-		&.huge {
-			font-size: 1.1em;
-			height: 4em;
-			line-height: 4.1em;
-			padding: 0 3.5em;
-
-			@include breakpoint(medium) {
-				font-size: 0.9em;
-				height: 3.5em;
-				line-height: 3.6em;
-				padding: 0 2em;
-			}
+			font-size: 1.35em;
 		}
 
 		&.disabled,
@@ -74,21 +56,21 @@
 			@include vendor('pointer-events', 'none');
 			opacity: 0.25;
 		}
+
+		@include breakpoint(small) {
+			min-width: 0;
+		}
 	}
 
 	@mixin color-button($p: null) {
-		$highlight: _palette($p, highlight);
-
 		input[type="submit"],
 		input[type="reset"],
 		input[type="button"],
 		button,
 		.button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette($p, border);
+			box-shadow: inset 0 0 0 1px _palette($p, border);
 			color: _palette($p, fg-bold) !important;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
 
 			&:hover {
 				background-color: _palette($p, border-bg);
@@ -105,34 +87,21 @@
 			}
 
 			&.special {
+				background-color: _palette(accent);
+				color: _palette(invert, bg) !important;
 				box-shadow: none;
 
-				@if $p == $highlight {
-					background-color: _palette($p, fg-bold);
-					color: _palette($p, bg) !important;
-
-					&.icon {
-						&:before {
-							color: _palette($p, fg-light);
-						}
-					}
+				&:hover {
+					background-color: lighten(_palette(accent), 3);
 				}
-				@else {
-					background-color: _palette($highlight, bg);
-					color: _palette($highlight, fg-bold) !important;
 
-					&:hover {
-						background-color: lighten(_palette($highlight, bg), 5);
-					}
+				&:active {
+					background-color: darken(_palette(accent), 3);
+				}
 
-					&:active {
-						background-color: darken(_palette($highlight, bg), 5);
-					}
-
-					&.icon {
-						&:before {
-							color: _palette($highlight, fg-light);
-						}
+				&.icon {
+					&:before {
+						color: _palette(invert, bg) !important;
 					}
 				}
 			}

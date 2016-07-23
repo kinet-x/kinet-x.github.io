@@ -1,11 +1,7 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
-/// Archetype by Pixelarity
-/// pixelarity.com @pixelarity
-/// License: pixelarity.com/license
+/// Stellar by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Form */
@@ -28,8 +24,7 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		border-radius: _size(border-radius);
-		border: none;
-		border: solid _size(border-width);
+		border: solid 1px;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -98,7 +93,7 @@
 
 			&:before {
 				border-radius: _size(border-radius);
-				border: solid _size(border-width);
+				border: solid 1px;
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);
@@ -155,8 +150,6 @@
 	}
 
 	@mixin color-form($p: null) {
-		$highlight: _palette($p, highlight);
-
 		label {
 			color: _palette($p, fg-bold);
 		}
@@ -170,14 +163,8 @@
 			border-color: _palette($p, border);
 
 			&:focus {
-				@if $p == $highlight {
-					border-color: _palette($p, fg-bold);
-					box-shadow: 0 0 0 _size(border-width) _palette($p, fg-bold);
-				}
-				@else {
-					border-color: _palette(accent1, bg);
-					box-shadow: 0 0 0 _size(border-width) _palette(accent1, bg);
-				}
+				border-color: _palette(accent);
+				box-shadow: 0 0 0 1px _palette(accent);
 			}
 		}
 
@@ -200,29 +187,16 @@
 
 			&:checked + label {
 				&:before {
-					@if $p == $highlight {
-						background-color: _palette($p, fg-bold);
-						border-color: _palette($p, fg-bold);
-						color: _palette($p, bg);
-					}
-					@else {
-						background-color: _palette(accent1, bg);
-						border-color: _palette(accent1, bg);
-						color: _palette(accent1, fg-bold);
-					}
+					background-color: _palette($p, fg-bold);
+					border-color: _palette($p, fg-bold);
+					color: _palette($p, bg);
 				}
 			}
 
 			&:focus + label {
 				&:before {
-					@if $p == $highlight {
-						border-color: _palette($p, fg-bold);
-						box-shadow: 0 0 0 _size(border-width) _palette($p, fg-bold);
-					}
-					@else {
-						border-color: _palette(accent1, bg);
-						box-shadow: 0 0 0 _size(border-width) _palette(accent1, bg);
-					}
+					border-color: _palette(accent);
+					box-shadow: 0 0 0 1px _palette(accent);
 				}
 			}
 		}
