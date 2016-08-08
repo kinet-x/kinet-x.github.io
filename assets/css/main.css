@@ -2021,7 +2021,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cc9f0;
+			background-color: #4080FF;
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -2031,7 +2031,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9acff2;
+				background-color: #4080FF;
 			}
 
 			input[type="submit"].special:active,
@@ -2039,7 +2039,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #7ec3ee;
+				background-color: #4080FF;
 			}
 
 			input[type="submit"].special.icon:before,
