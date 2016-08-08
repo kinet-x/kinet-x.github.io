@@ -72,6 +72,8 @@
 		box-sizing: border-box;
 	}
 
+
+
 	.row:after, .row:before {
 		content: '';
 		display: block;
@@ -3794,4 +3796,23 @@
 			}
 
 		}
+
+#fav.row {
+	display: block;
+	text-align: center;
+	margin-left: 13%;
+	margin-right: auto;
+}
+
+.fa-dollar {
+	color: #E54905;
+}
+
+.fa-clipboard {
+	color: #E54905;
+}
+
+.fa-calendar {
+	color: #E54905;
+}
 
