@@ -3820,3 +3820,26 @@
 .mgsh{
     width: 20%;
 }
+
+.circle-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+	display: inline;
+	margin: 0 auto;
+	height: 120%;
+	width: 55%;
+	border: solid 1px;
+	padding: 0.65em;
+	
+	
+}
+
+.raow .image img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}
+
