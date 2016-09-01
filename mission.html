@@ -14,6 +14,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <script type="text/javascript">
+        function toggleMe(a){
+            var e=document.getElementById(a);
+            if(!e)return true;
+            if(e.style.display=="none"){
+            e.style.display="block"
+            }
+            else{
+            e.style.display="none"
+            }
+            return true;
+        }
+        </script>
+        <style>
+            .bio{
+                display: none;
+                font-family: fantasy;
+            }
+        </style>
 
 	</head>
 	<body>
@@ -32,6 +51,7 @@
 							<ul>
 								<li><a href="index.html"><img width="70px" src="images/Logosite24.png"></a></li>
 								<li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
 								<li><a href="faq.html">FAQ</a></li>
 								<li><a href="signup.html">Sign Up</a></li>
 							</ul>
@@ -60,55 +80,48 @@
 								<section id="first" class="main special">
 									<header class="major">
 										<h2>About Us</h2>
-										<p>A team of teenagers dedicated to making the tech community more inclusive.</p>
+										<p>A team of teenagers trying to change the way STEM education works</p>
 									</header>
 									<div class="row uniform">
 											<div class="3u">
 												<span class="image fit"><img src="images/adam.jpg" alt="kinet-x curriculum developer" /></span>
 												<h3>Adam Abbas</h3>
-												<p><strong>Curriculum Developer</strong></p>
+												<p><strong>Programming Leader</strong></p>
+                                                <!--<input type="button" onclick="return toggleMe('adamstuff')" value="Read About Adam!" ><br>
+                                                <span class="bio" id="adamstuff">I love coding! I've been programming ever since I was 12, and nothing makes me happier than learning a new programming language, or building a new app. Teaching people how to code is my way of giving back to the amazing world of STEM, and to hopefully inspire someone to take the path that I did - and be all the more happy for it! You can learn more about me and what I've done on my website: <a href="http://adamabbas.me">adamabbas.me</a></p>-->
+                                                
 											</div>
 											<div class="3u">
 												<span class="image fit"><img src="images/allan.jpg" alt="kinet-x marketing director" /></span>
 												<h3>Allan Wang</h3>
 												<p><strong>Marketing Director</strong></p>
+                                                <!--<input type="button" onclick="return toggleMe('allanstuff')" value="Read About Allan!" ><br>
+                                                <p class="bio" id="allanstuff">Here is stuff</p>-->
 											</div>
 											<div class="3u">
 												<span class="image fit"><img src="images/chauncey.jpg" alt="kinet-x curriculum director" /></span>
 												<h3>Chauncey Lau</h3>
-												<p><strong>Curriculum Developer</strong></p>
+												<p><strong>Engineering Leader</strong></p>
+                                                <!--<input type="button" onclick="return toggleMe('chaunctuff')" value="Read About Chauncey!" ><br>
+                                                <p class="bio" id="chaunctuff">Here is stuff</p>-->
 											</div>
 											<div class="3u">
-												<span class="image fit"><img src="images/tahseen.jpg" alt="kinet-x operations & legal director" /></span>
+												<span class="image fit"><img src="images/tahseen.jpg" alt="kinet-x legal director" /></span>
 												<h3>Tahseen Chowdhury</h3>
 												<p><strong>Legal Director</strong></p>
+                                                <!--<input type="button" onclick="return toggleMe('tahstuff')" value="Read About Faggot!" ><br>
+                                                <p class="bio" id="tahstuff">Here is stuff</p>-->
 											</div>
-									</ul>
-								</div>
-
+								        </div>
+                                </section>
 								<hr />
-
-								<!-- First Section -->
-									<section id="first" class="main special">
-										<header class="major">
-											<h2>Our Supporters</h2>
-											<p>Our corporate sponsors have provided us with substiantial resources to provide you with this program.</p>
-										</header>
-										<div class="row uniform" style="margin-left:10%;">
-												<div id="supporters">
-												<span class="image"><img id="khans" src="images/khanstutorial.png" alt="" width="300" style="padding:25px; padding-bottom:60px;"/></span>
-												<!--<span class="image"><img id="pine"src="images/Pine-Stree-School-logo.png" alt="" width="300" /></span>-->
-												<span class="image"><img src="images/google.jpg" alt="" width="300" /></span>
-											    </div>
-										</div>
-
-					</div>
+					</div> 
 
 					<!-- Footer -->
 						<footer id="footer">
 							<section>
 								<h2>Our Mission</h2>
-								<p>Kinet-X goal is to ignite the inspirational spark of technology in as many student accross the city.</p>
+								<p>Kinet-X's goal is to ignite the inspirational spark of technology in as many student accross the city.</p>
 								<ul class="icons">
 									<li><a href="https://twitter.com/kinetxed/followers" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
 									<li><a href="https://www.facebook.com/KinetXEd/?fref=ts" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
