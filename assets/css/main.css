@@ -3838,8 +3838,35 @@
 	
 }
 
-.raow .image {
-		border-color: rgba(255, 255, 255, 0.35);
+    .raow .image {
+            border-color: rgba(255, 255, 255, 0.35);
+    }
+.testimg {
+    width:15%;
+    border-radius: 100px;
+}
+.raow.testithing {
+    margin-left: 33.3333333%;
+    width: 33.33333%;
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+.testithing:first-of-type {
+    padding-left:20px;
+}
+.testithing:last-of-type {
+    padding-right:20px;
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.alignvert {
+    @include vertical-align()
 }
 
 
