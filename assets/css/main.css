@@ -3831,7 +3831,6 @@
 .circle-crop {
     width: 100px;
     height: 100px;
-    position: relative;
     overflow: hidden;
     border-radius: 50%;
 	display: inline;
@@ -3841,6 +3840,7 @@
 	border: solid 0.1em;
 	border-color: #F6F6F6;
 	padding: 0.65em;
+    margin-top:15%;
 	
 	
 }
