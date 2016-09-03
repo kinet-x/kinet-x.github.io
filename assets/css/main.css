@@ -2460,7 +2460,7 @@
 
 		.image.main {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 0 em 0;
 			width: 100%;
 		}
 
@@ -2665,14 +2665,19 @@
 		text-align: center;
 	}
     
-    header.hdr {
+    .hdr {
         margin-top: 2em;
         margin-bottom: 2em;
         font-size: 150%
     }
+    .hdrplus {
+        margin-top:-2%;
+        font-size: 150%;
+        background-image: url(../../images/pic05.jpg);
+        background-repeat: no-repeat;
+    }
 
 	header.major {
-        margin-top: 3em;
 		margin-bottom: 3em;
 	}
 
@@ -3108,7 +3113,7 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 0em 5em 4em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3149,11 +3154,11 @@
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 4em 0.1em 4em ;
+				padding: 0em 4em 0.1em 4em ;
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 0em 4em 3em 4em ;
 				}
 
 		}
@@ -3173,7 +3178,7 @@
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 3em 2em 0.1em 2em ;
+				padding: 0em 2em 0.1em 2em ;
 			}
 
 				#header p {
@@ -3198,7 +3203,7 @@
 		@media screen and (max-width: 480px) {
 
 			#header {
-				padding: 3em 1.5em 0.1em 1.5em ;
+				padding: 0em 1.5em 0.1em 1.5em ;
 			}
 
 				#header.alt {
@@ -3210,11 +3215,11 @@
 		@media screen and (max-width: 360px) {
 
 			#header {
-				padding: 2.5em 1em 0.1em 1em ;
+				padding: 0em 1em 0.1em 1em ;
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 0em 1em 0.5em 1em ;
 				}
 
 		}
