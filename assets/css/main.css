@@ -2664,8 +2664,15 @@
 	section.special, article.special {
 		text-align: center;
 	}
+    
+    header.hdr {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 150%
+    }
 
 	header.major {
+        margin-top: 3em;
 		margin-bottom: 3em;
 	}
 
@@ -2678,7 +2685,7 @@
 				content: '';
 				width: 3.25em;
 				height: 2px;
-				margin: 0.7em 0 1em 0;
+				margin: 0 1em 0;
 				border-radius: 2px;
 			}
 
@@ -3087,7 +3094,7 @@
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 0em 5em 1em 5em ;
 		text-align: center;
 	}
 
@@ -3109,22 +3116,22 @@
 			}
 
 			#header.alt > * {
-				-moz-transition: opacity 3s ease;
-				-webkit-transition: opacity 3s ease;
-				-ms-transition: opacity 3s ease;
-				transition: opacity 3s ease;
-				-moz-transition-delay: 0.5s;
-				-webkit-transition-delay: 0.5s;
-				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+				-moz-transition: opacity 2s ease;
+				-webkit-transition: opacity 2s ease;
+				-ms-transition: opacity 2s ease;
+				transition: opacity 2s ease;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
 				opacity: 1;
 			}
 
 			#header.alt .logo {
-				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
-				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
-				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-				transition: opacity 1.25s ease, transform 0.5s ease;
+				-moz-transition: opacity 1s ease, -moz-transform 0.25s ease;
+				-webkit-transition: opacity 1s ease, -webkit-transform 0.25s ease;
+				-ms-transition: opacity 1s ease, -ms-transform 0.25s ease;
+				transition: opacity 1s ease, transform 0.25s ease;
 				-moz-transition-delay: 0s;
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
